@@ -1,0 +1,31 @@
+.front-page-nav {
+  @include outer-container;
+  margin-left: 200px;
+  text-align: center;
+  .resource-buttons {
+    font-size: 14px;
+    font-weight: bold;
+    @include button;
+  }
+}
+.landing-page {
+  @include outer-container;
+}
+.div1{
+  @include span-columns(6);
+  margin-left: 200px;
+  .sign-in{
+    width: 600px;
+    opacity: .80;
+  }
+}
+
+.div2{
+  @include span-columns(6);
+  margin-left: 200px;
+  border-top: 1px solid black;
+  .sign-up {
+    width: 600px;
+    opacity: .80;
+  }
+}

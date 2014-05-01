@@ -1,0 +1,43 @@
+h3 {
+  padding-left: 30px;
+}
+
+.resource-container {
+  @include outer-container;
+}
+
+.resource-name {
+  @include span-columns(3);
+  padding: 10px 10px;
+  border-top: 1px solid black;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+    color: $light-green;
+    &:hover {
+      cursor: pointer;
+      color: $dark-green;
+    }
+  }
+}
+
+.resource-city {
+  @include span-columns(3);
+  padding: 10px 10px;
+  border-top: 1px solid black;
+  margin: 0 auto;
+}
+
+.resource-role {
+  @include span-columns(3);
+  padding: 10px 10px;
+  border-top: 1px solid black;
+  margin: 0 auto;
+}
+
+.resource-address {
+  @include span-columns(3);
+  padding: 10px 10px;
+  border-top: 1px solid black;
+  margin: 0 auto;
+}

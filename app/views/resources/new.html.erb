@@ -1,0 +1,21 @@
+<div class="resource-form">
+  <%= form_for @resource do |f| %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.label :role %>
+      <%= f.text_field :role %>
+    </div>
+    <div>
+      <%= f.label :city %>
+      <%= f.text_field :city %>
+    </div>
+    <div>
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>
