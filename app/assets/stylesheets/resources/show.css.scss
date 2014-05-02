@@ -1,0 +1,18 @@
+.resource-form-container {
+  @include outer-container;
+}
+.resource-form-info {
+  @include span-columns(8);
+  padding: 10px;
+  max-width: 600px;
+  li {
+    list-style: none;
+  }
+  .resource-link {
+    color: green;
+    float: right;
+  }
+  .resource-link { 
+    @include span-columns(4);
+  }
+}

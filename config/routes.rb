@@ -1,3 +1,5 @@
 UseSafe::Application.routes.draw do
-  root 'homes#show'
+  root 'homes#index'
+
+  resources :resources
 end

@@ -1,0 +1,27 @@
+<div class="resource-form-container">
+  <div class="resource-form-info">
+    <h4><%= @resource.name %></h4>
+  </div>
+  <div class="resource-form-info">
+    Services Offered:
+    <p>
+    <li>
+      <%= @resource.role %>
+    </li>
+    </p>
+  </div>
+  <div class="resource-form-info">
+    Address:
+    <p>
+    <li>
+      <%= @resource.address %>, <%= @resource.city %>
+    </li>
+    </p>
+  </div>
+  <p>
+    <%= link_to "Edit Resource", edit_resource_path(@resource.id), class:"resource-link" %>
+  </p>
+  <p>
+    <%= link_to "View All Resources", resources_path, class:"resource-link" %>
+  </p>
+</div>

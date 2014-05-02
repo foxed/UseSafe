@@ -1,0 +1,17 @@
+<h3>Resources</h3>
+<% @resources.each do |resource| %>
+  <div class="resource-container">
+  <section class="resource-name">
+    <%= link_to resource.name, resource_path(resource.id) %>
+  </section>
+  <section class="resource-role">
+    <%= resource.role %>
+  </section>
+  <section class="resource-city">
+    <%= resource.city %>
+  </section>
+  <section class="resource-address">
+    <%= resource.address %>
+  </section>
+  </div>
+<% end %>
