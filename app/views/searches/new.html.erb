@@ -1,0 +1,6 @@
+<h3>Search for a Resource</h3>
+
+<%= form_for(:search, url: search_path, method: :get) do |form| %>
+  <%= form.text_field :query, placeholder: "Search Here" %>
+  <%= form.submit "Search" %>
+<% end %>

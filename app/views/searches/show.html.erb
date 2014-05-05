@@ -1,0 +1,13 @@
+<h3>Search Results for <i><%= @query.upcase %></i></h3>
+<div id="resource-search-container">
+  <% @resources.each do |resource| %>
+    <div class="resource-search-name">
+      <%= link_to resource.name, resource %>
+    </div>
+    <div class="resource-search-role">
+      <li>
+        <%= resource.role %>
+      </li>
+    </div>
+  <% end %>
+</div>
