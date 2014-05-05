@@ -1,0 +1,18 @@
+.resource-search-container {
+  @include span-columns(12);
+  padding: 300px;
+}
+
+.resource-search-name {
+  @include span-columns(6);
+  margin: 20px;
+  bottom-border: 1px black solid;
+  padding-left: 80px;
+}
+
+.resource-search-role {
+  @include span-columns(6);
+  padding-left: 120px;
+  padding-bottom: 50px;
+  list-style: none;
+}
