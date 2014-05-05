@@ -1,5 +1,6 @@
 UseSafe::Application.routes.draw do
-  root 'homes#index'
+  devise_for :users
+  root to: 'homes#index'
 
   resources :resources
 

@@ -3,25 +3,16 @@
   <%= link_to "Check out our Resources", resources_path, class:"resource-buttons" %>
   <%= link_to "Search our Resources", new_search_path, class:"resource-buttons" %>
   <%= link_to "Add a Resource", new_resource_path, class:"resource-buttons" %>
+  <%= link_to "Sign In", new_user_session_path, class:"sign-in-buttons" %>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"sign-in-buttons" %>
+  <%= link_to "Sign Up", new_user_registration_path, class:"sign-up-buttons", class:"sign-in-buttons" %>
   </p>
 </nav>
 <div id="landing-page">
-  <div id="divs" class="div1">
+  <div class="div1">
     <p>
     <h1>UseSafe</h1>
     </p>
     <h3>Quick, easy access to harm reduction resources.</h3>
-    <p>
-    <form class="sign-in">
-      <div>
-        <input type="email" placeholder="email">
-        <p>
-        <input type="password" placeholder="password">
-      </div>
-      <div>
-        <input type="submit" value="Sign In">
-      </div>
-    </form>
-    </p>
   </div>
 </div>
