@@ -14,3 +14,22 @@
     background: $light-green;
   }
 }
+
+@mixin sign-in-button {
+  background: $light-green;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+    color: black;
+    background: white;
+  }
+}
+
