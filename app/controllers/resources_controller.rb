@@ -1,4 +1,6 @@
 class ResourcesController < ApplicationController
+  before_filter :ensure_user_is_admin, only: [:create, :update, :destroy]
+
   def show
     @resource = Resource.find(params[:id])
   end

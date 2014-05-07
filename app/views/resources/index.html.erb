@@ -1,4 +1,11 @@
-<h3>Resources</h3>
+<div id="admin-nav">
+  <h3>Resources<h3>
+    <p>
+      <% if current_user.admin? %>
+        <%= link_to "Add a Resource", new_resource_path, class: "add-resource-button" %>
+      <% end %>
+    </p>
+</div>
 <% @resources.each do |resource| %>
   <div class="resource-container">
   <section class="resource-name">
