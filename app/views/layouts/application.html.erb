@@ -6,13 +6,11 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Karla:400,700">
   <%= csrf_meta_tags %>
-
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 </head>
 <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-<%= yield %>
-
+  <%= yield %>
 </body>
 </html>
