@@ -18,10 +18,12 @@
     </li>
     </p>
   </div>
+    <% if current_user.admin? %>
+    <p>
+      <%= link_to "Edit Resource", edit_resource_path(@resource.id), class: "resource-link" %>
+    </p>
+    <% end %>
   <p>
-    <%= link_to "Edit Resource", edit_resource_path(@resource.id), class:"resource-link" %>
-  </p>
-  <p>
-    <%= link_to "View All Resources", resources_path, class:"resource-link" %>
+    <%= link_to "View All Resources", resources_path, class: "resource-link" %>
   </p>
 </div>
