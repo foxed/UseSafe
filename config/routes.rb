@@ -3,6 +3,7 @@ UseSafe::Application.routes.draw do
   root to: 'homes#index'
 
   resources :resources
+  resources :readings, only: [:show, :index]
 
   resource :search, only: [:show, :new]
 end
