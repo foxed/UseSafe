@@ -1,15 +1,21 @@
 html, body {
-  background: $light-grey;
+  background: $medium-grey;
   color: $dark-green;
   font-family: "karla";
 }
 
+h1 {
+  font-size: 36px;
+}
+
 a {
   text-decoration: none;
-  color: $light-green;
+  color: $medium-green;
+  text-transform: uppercase;
   font-size: 20px;
+
   &:hover {
     cursor: pointer;
-    color: #21635c;
+    color: $light-green;
   }
 }
