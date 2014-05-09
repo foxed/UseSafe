@@ -6,4 +6,6 @@ UseSafe::Application.routes.draw do
   resources :readings, only: [:show, :index]
 
   resource :search, only: [:show, :new]
+
+  resources :posts, only: [:show, :index, :new, :create]
 end
