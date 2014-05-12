@@ -4,3 +4,16 @@
 <div>
   <%= @post.description %>
 </div>
+
+<div>
+  <%= render @comments %>
+</div>
+
+<div id="comment-form">
+  <%= form_for [@post, @comment] do |form| %>
+    <div>
+      <%= form.text_area :body, rows: 6 %>
+    </div>
+    <%= form.submit "Create a Comment" %>
+  <% end %>
+</div>

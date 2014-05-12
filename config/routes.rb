@@ -7,5 +7,7 @@ UseSafe::Application.routes.draw do
 
   resource :search, only: [:show, :new]
 
-  resources :posts, only: [:show, :index, :new, :create]
+  resources :posts, only: [:show, :index, :new, :create] do 
+    resources :comments, only: [:create]
+  end
 end
