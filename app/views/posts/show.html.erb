@@ -1,18 +1,15 @@
-<div>
+<div class="post-title">
   <%= @post.title %>
 </div>
-<div>
+<div class="post-desc">
   <%= @post.description %>
+  <p class="post-admin"> posted by <%= @post.user.username %></p>
 </div>
-
-<div>
+<div id="comments">
   <%= render @comments %>
-</div>
-
-<div id="comment-form">
-  <%= form_for [@post, @comment] do |form| %>
+  <%= form_for [@post, @comment], remote: true do |form| %>
     <div>
-      <%= form.text_area :body, rows: 6 %>
+      <%= form.text_area :body, rows: 5 %>
     </div>
     <%= form.submit "Create a Comment" %>
   <% end %>

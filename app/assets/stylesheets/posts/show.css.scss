@@ -1,0 +1,84 @@
+.post-title {
+  @include outer-container;
+  @include shift(2);
+  font-style: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: table;
+  width: 80%;
+}
+
+.post-desc {
+  @include shift(2);
+  margin-bottom: 40px;
+  border-bottom: 1px solid transparentize($dark-green, .8);
+  display: table;
+  width: 80%;
+
+  p {
+    font-style: italic;
+    color: transparentize($dark-green, .3);
+  }
+}
+
+.comment {
+  @include outer-container;
+  $base-border-radius: em(3);
+  $comment-gutter: 1.4em;
+  $comment-image-padding: .7em;
+  $comment-image-width: 4em;
+  $comment-color: $dark-green;
+  $comment-background: lighten(black, 15);
+  $comment-detail-color: transparentize($comment-color, .5);
+  $comment-image-vert-alignment: top;
+
+  display: table;
+  width: 80%;
+  margin-bottom: 10px;
+  padding-bottom: 1em;
+  border-bottom: 1px solid transparentize($comment-color, .9);
+
+  .comment-image,
+  .comment-content {
+    display: table-cell;
+    vertical-align: $comment-image-vert-alignment;
+  }
+
+  .comment-image {
+    padding-right: $comment-gutter;
+
+    > img {
+      width: $comment-image-width;
+      height: auto;
+      border-radius: $base-border-radius;
+      padding: $comment-image-padding;
+      background: $comment-background;
+      display: block;
+      max-width: none;
+    }
+
+    .comment-reverse-order & {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .comment-content {
+    width: 100%;
+
+    h1 {
+      font-size: 1em;
+      margin-bottom: .5em;
+    }
+
+    p {
+      margin-bottom: .5em;
+    }
+
+    p.comment-detail {
+      font-style: italic;
+      font-size: .9em;
+      color: $comment-detail-color;
+    }
+  }
+}

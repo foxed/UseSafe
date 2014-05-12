@@ -1,0 +1,9 @@
+form {
+  @include outer-container;
+  @include shift(2);
+  color: black;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
