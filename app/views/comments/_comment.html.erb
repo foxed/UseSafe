@@ -1,10 +1,15 @@
-<div class="comment">
-  <div class="comment-image">
-    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
-  </div>
-  <div class="comment-content">
-    <h1><%= comment.user.username %></h1>
-    <p><%= comment.body %></p>
-    <p class="comment-detail">Date or details about this post</p>
+<div id="<%= dom_id(comment) %>">
+  <div class="comment">
+    <div class="comment-image">
+      <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
+    </div>
+    <div class="comment-content">
+      <h1><%= comment.username %></h1>
+      <p><%= comment.body %></p>
+      <p class="comment-detail">Date or details about this post</p>
+      <% if current_user == comment.user %>
+        <%= button_to "Delete", comment, method: :delete, remote: true %>
+      <% end %>
+    </div>
   </div>
 </div>

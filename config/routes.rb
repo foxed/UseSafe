@@ -10,4 +10,6 @@ UseSafe::Application.routes.draw do
   resources :posts, only: [:show, :index, :new, :create] do 
     resources :comments, only: [:create]
   end
+
+  resources :comments, only: [:destroy]
 end
