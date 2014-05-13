@@ -1,0 +1,7 @@
+if ($("#comment_body").val() = "") {
+  alert("You cannot submit a blank comment.");
+} else {
+  $("#comment_body").val("");
+  template = "<%= j render(@comment) %>";
+  $("#comments").prepend(template);
+}
