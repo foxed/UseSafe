@@ -4,6 +4,12 @@
 <div class="post-desc">
   <%= @post.description %>
   <p class="post-admin"> posted by <%= @post.user.username %></p>
+  <div class="post-alter">
+    <% if current_user == @post.user %>
+      <%= link_to "Edit Post", edit_post_path(@post) %>, 
+      <%= link_to "Delete Post", @post, method: :delete %>
+    <% end %>
+  </div>
 </div>
 <div id="comments">
   <%= render @comments %>

@@ -1,4 +1,9 @@
 <div class="posts-container">
   <h2>FAQ AND INFO</h2>
+  <div>
+    <% if current_user.admin? %>
+      <%= link_to "Create New Post", new_post_path %>
+    <% end %>
+  </div>
 </div>
 <%= render @posts %>
