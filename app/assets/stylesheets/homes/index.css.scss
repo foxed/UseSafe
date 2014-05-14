@@ -1,23 +1,57 @@
-.front-page-nav {
-  @include outer-container;
-  text-align: center;
-  .resource-buttons {
-    font-size: 14px;
-    font-weight: bold;
-    @include button;
+.hero {
+  $hero-background: desaturate(darken($light-green, 20), 30);
+  $hero-color: white;
+  $large-screen: em(860);
+
+  background: image-url("usesafe.jpg");
+  background-color: $hero-background;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 12em;
+  margin-top: 20px;
+
+  .hero-logo img {
+    height: 3em;
+    margin-bottom: 1em;
   }
-  .sign-in-buttons {
-    font-size: 16px;
-    @include sign-in-button;
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    padding: 4em;
+    margin: auto;
+    text-align: center;
+    color: $hero-color;
+
+    button {
+      @include button(simple, $medium-green);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .hero-copy {
+      text-align: center;
+
+      h1 {
+        font-size: 1.4em;
+        margin-bottom: .2em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        margin: auto;
+        margin-bottom: 3em;	
+        font-weight: 200;
+
+        @include media($large-screen) {
+          font-size: 1.2em;
+          max-width: 40%;
+        }
+      }
+    }
   }
 }
-
-.landing-page {
-  @include outer-container;
-}
-
-.div1{
-  @include span-columns(6);
-  margin-left: 200px;
-}
-
