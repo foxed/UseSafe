@@ -1,0 +1,18 @@
+<h4>Downloadable PDFs</h4>
+<div>
+  Welcome to UseSafe's collection of Harm Reduction resources.
+  <p>
+  Click on the links below to access the PDF in your browser or right-click and select "save link as" to save the PDF to your computer. 
+  </p>
+</div>
+<div>
+  <% @readings.each do |reading| %>
+    <div>
+      <%= link_to File.basename(reading, ".pdf"), reading_path(File.basename(reading)) %>
+    </div>
+  <% end %>
+</div>
+<h4>External Links (non-PDFs)</h4>
+<div>
+  <%= link_to "Reddit's Opiate FAQ", src="http://www.reddit.com/r/opiates/comments/sexqg/faq_ropiates_frequently_asked_questions/", class: "pdf-link" %>
+</div>

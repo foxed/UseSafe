@@ -3,79 +3,26 @@
     <li class="tab-header-and-content">
     <a href="#" class="tab-link is-active">Overview</a>
     <section>
-      <h2>WHAT IS HARM REDUCTION?</h2>
-      <p class="harm-header">A big thanks to the <a href="http://www.ihra.net/what-is-harm-reduction">IHRA</a> for providing such a thorough write-up about harm reduction.</p>
-      <dl>
-        <dt>Definition</dt>
-        <dd>
-        ‘Harm Reduction’ refers to policies, programmes and practices that aim primarily to reduce the adverse health, social and economic consequences of the use of legal and illegal psychoactive drugs without necessarily reducing drug consumption. Harm reduction benefits people who use drugs, their families and the community.
-        </dd>
-        <dt>Principles</dt>
-        <dd>
-        The harm reduction approach to drugs is based on a strong commitment to public health and human rights.
-        </dd>
-        <dt>Targeted at risks</dt>
-        <dd>
-        Harm reduction is a targeted approach that focuses on specific risks and harms. Politicians, policymakers, communities, researchers, frontline workers and people who use drugs should ascertain:
-        </dd>
-        <dd>
-        <p>
-        What are the specific risks and harms associated with the use of specific psychoactive drugs?
-        </p>
-        <p>
-        What causes those risks and harms?
-        </p>
-        <p>
-        What can be done to reduce these risks and harms?
-        </p>
-        <p>
-        Harm reduction targets the causes of risks and harms. The identification of specific harms, their causes, and decisions about appropriate interventions requires proper assessment of the problem and the actions needed. The tailoring of harm reduction interventions to address the specific risks and harms must also take into account factors which may render people who use drugs particdtarly vdtnerable, such as age, gender and incarceration.
-        </p>
-        </dd>
-        <dt>Evidence based and cost effective</dt>
-        <dd>
-        Harm reduction approaches are practical, feasible, effective, safe and cost-effective. Harm reduction has a commitment to basing policy and practice on the strongest evidence available. Most harm reduction approaches are inexpensive, easy to implement and have a high impact on individual and community health. In a world where there will never be sufficient resources, benefit is maximised when low-cost/high-impact interventions are preferred over high-cost/low-impact interventions.
-        </dd>
-        <dt>Incremental</dt>
-        <dd>
-        Harm reduction practitioners acknowledge the significance of any positive change that individuals make in their lives. Harm reduction interventions are facilitative rather than coercive, and are grounded in the needs of individuals. As such, harm reduction services are designed to meet people’s needs where they currently are in their lives. Small gains for many people have more benefit for a community than heroic gains achieved for a select few. People are much more likely to take mdttiple tiny steps rather than one or two huge steps.
-
-        The objective of harm reduction in a specific context can often be arranged in a hierarchy with the more feasible options at one end (eg measures to keep people healthy) and less feasible but desirable options at the other end. Abstinence can be considered a difficdtt to achieve but desirable option for harm reduction in such a hierarchy. Keeping people who use drugs alive and preventing irreparable damage is regarded as the most urgent priority while it is acknowledged that there may be many other important priorities.
-        </dd>
-        <dt>Dignity and compassion</dt>
-        <dd>
-        Harm reduction practitioners accept people as they are and avoid being judgemental. People who use drugs are always somebody’s son or daughter, sister or brother or father or mother. This compassion extends to the families of people with drug problems and their communities. Harm reduction practitioners oppose the deliberate stigmatisation of people who use drugs. Describing people using language such as ‘drug abusers’, ‘a scourge’, ‘bingers’, ‘junkies’, ‘misusers’, or a ‘social evil’ perpetuates stereotypes, marginalises and creates barriers to helping people who use drugs. Terminology and language shodtd always convey respect and tolerance.
-        </dd>
-        <dt>Universality and interdependence of rights</dt>
-        <dd>
-        Human rights apply to everyone. People who use drugs do not forfeit their human rights, including the right to the highest attainable standard of health, to social services, to work, to benefit from scientific progress, to freedom from arbitrary detention and freedom from cruel inhuman and degrading treatment. Harm reduction opposes the deliberate hurts and harms inflicted on people who use drugs in the name of drug control and drug prevention, and promotes responses to drug use that respect and protect fundamental human rights.
-        </dd>
-      </dl>
+      <%= render 'readings/overview' %>
     </section>
     </li>
     <li class="tab-header-and-content">
     <a href="#" class="tab-link">Comprehensive FAQ</a>
     <section>
-      blah blah
+      <%= render 'readings/faq' %>
     </section>
     </li>
     <li class="tab-header-and-content">
     <a href="#" class="tab-link">Basic Safety Guidelines</a>
     <section>
-      <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>
+      <%= render 'readings/safety' %>
+      Safety
     </section>
     </li>
     <li class="tab-header-and-content">
     <a href="#" class="tab-link">Read More</a>
     <section>
-      <aside>
-        Welcome to UseSafe's collection of Harm Reduction resources. </br>
-        Click on the links to the right to access the external resources. </br>
-      </aside>
-      <article>
-        <%= link_to "H is for Heroin", reading_path(1), class: "pdf-link" %>
-        <%= link_to "Reddit's Opiate FAQ", src="http://www.reddit.com/r/opiates/comments/sexqg/faq_ropiates_frequently_asked_questions/", class: "pdf-link" %>
-      </article>
+      <%= render 'readings/read_more' %>
     </section>
     </li>
   </ul>
