@@ -19,6 +19,16 @@
     font-style: italic;
     color: transparentize($dark-green, .3);
   }
+
+  .post-alter {
+    display: table;
+    width: 60%;
+
+    a {
+      font-size: 14px;
+      color: black;
+    }
+  }
 }
 
 .comment {

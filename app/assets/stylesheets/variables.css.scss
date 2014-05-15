@@ -1,6 +1,6 @@
-$dark-green: #2A7E74;
-$medium-green: #349D8A;
-$light-green: #6ECFB8;
+$medium-green: #1B503B;
+$dark-green: #184934;
+$light-green: lighten($dark-green, 20);
 
 $light-grey: #E8E8E8;
 $medium-grey: darken($light-grey, 3%);

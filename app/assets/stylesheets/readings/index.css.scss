@@ -1,7 +1,7 @@
 .accordion-tabs-minimal {
-  $base-border-color: $dark-green;
+  $base-border-color: $medium-green;
   $base-body-color: $medium-grey;
-  $tab-border-color: $medium-green;
+  $tab-border-color: $light-green;
   $tab-border: 1px solid $tab-border-color;
   $tab-content-background: $base-body-color;
   $tab-active-background: $tab-content-background;
@@ -48,7 +48,7 @@
   li.tab-header-and-content a.tab-link {
     background-color: $tab-inactive-color;
     border-top: $tab-border;
-    color: $dark-green;
+    color: $medium-green;
     display: block;
     font-weight: 400;
     padding: $base-line-height/2 $gutter;
@@ -61,7 +61,7 @@
     }
 
     &:hover {
-      color: $medium-green;
+      color: darken($light-green, 5);
     }
 
     &:focus {

@@ -11,7 +11,7 @@ class ResourceSearcher
   attr_reader :query
 
   def search_resources
-    Resource.where("role ILIKE :query", query: "%#{@query}%")
+    Resource.where("role ILIKE :query OR name ILIKE :query", query: "%#{@query}%")
   end
 
 end

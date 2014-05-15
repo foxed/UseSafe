@@ -1,7 +1,9 @@
 html, body {
   background: $medium-grey;
-  color: $dark-green;
-  font-family: "karla";
+  color: lighten($medium-green, 2);
+  font-family: "Noto Sans";
+  line-height: 150%;
+  font-size: 16px;
 }
 
 h1 {
@@ -10,8 +12,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: $medium-green;
-  text-transform: uppercase;
+  color: lighten($medium-green, 20);
   font-size: 20px;
 
   &:hover {
