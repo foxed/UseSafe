@@ -2,17 +2,44 @@
 <div>
   Welcome to UseSafe's collection of Harm Reduction resources.
   <p>
-  Click on the links below to access the PDF in your browser or right-click and select "save link as" to save the PDF to your computer. 
+  Click on the links below to access the PDF in your browser or right-click and select "save link as" to save the PDF to your computer.
   </p>
 </div>
 <div>
-  <% @readings.each do |reading| %>
-    <div>
-      <%= link_to File.basename(reading, ".pdf"), reading_path(File.basename(reading)) %>
-    </div>
-  <% end %>
-</div>
-<h4>External Links (non-PDFs)</h4>
-<div>
-  <%= link_to "Reddit's Opiate FAQ", src="http://www.reddit.com/r/opiates/comments/sexqg/faq_ropiates_frequently_asked_questions/", class: "pdf-link" %>
+  <div>
+  </div>
+  <div>
+    <%= link_to "H is for Heroin", reading_path("HisforHeroin.pdf"), target: :blank  %>
+    <p>
+    H is for Heroin is an informational brochure created as part of the Straight Dope Education Series to provide accurate information about drugs so that people can make rational, safer and informed decisions about their drug use.
+    </p>
+  </div>
+  <div>
+    <%= link_to "The Impact of Harm-Reduction Based Methadone Treatment", reading_path("methadone_treatment.pdf"), target: :blank  %>
+    <p>
+    The purpose of this study was to investigate the impact of harm-reduction-based methadone programs on mortality amoong heroin users. Harm-reduction-based methadone treatment, in which the use of illicit drugs is tolerated, is strongly related to decreased mortality from natural causes and from overdoses. Provision of metha- done in itself, together with social–medi- cal care, appears more important than the actual methadone dosage.
+    </p>
+  </div>
+  <div>
+    <%= link_to "Heroin: Its History, Pharmacology, and Treatment", reading_path("hazelden_heroin.pdf"), target: :blank %>
+    <p>
+    A comprehensive overview of Heroin, including its history, pharmacology, and treatment options. This pdf is provided by Hazelden, a well-respected rehabilitation facility. Hazelden, a part of the Hazelden Betty Ford Foundation, has been saving lives and restoring families from substance abuse and addiction for more than 60 years.  With outpatient and residential programs in Minnesota, Oregon, California, Florida, New York and Illinois.
+  </div>
+  <div>
+    <%= link_to "Getting Off Right", reading_path("iv-right.pdf"), target: :blank  %>
+    <p>
+    "Getting Off" is slang for injecting drugs. "Getting Off Right" is a safety manual for injection drug users, providing step-by-step instructions on how to limit the dangers and risks that often come with introvenous drug use.
+    </p>
+  </div>
+  <div>
+    <%= link_to "Treatment Options for Opiate Dependence", reading_path("opiate_carers.pdf"), target: :blank  %>
+    <p>
+    A detailed PDF that provides insight to the treatment options available to opiate dependent persons and their families. Treatment will be more effective if it fits in with a person’s individual circumstances. Everybody is different, and an assessment by a medical practitioner/health professional will help identify the types of treatment that best suit a person’s level of dependence, goals and preferences.
+    </p>
+  </div>
+  <div>
+    <h3>More PDFs detailing Opiate Treatment Options</h3>
+    <p>
+    <%= link_to "The Ethical Use of Psychosocially Assisted Pharmacological Treatments for Opiod Dependence", reading_path("ethical_use_opiod_treatment.pdf"), target: :blank  %>
+    </p>
 </div>
