@@ -44,7 +44,9 @@ class ResourcesController < ApplicationController
       :name,
       :role,
       :city,
-      :address
+      :address,
+      :url,
+      :phone
     )
   end
 end
