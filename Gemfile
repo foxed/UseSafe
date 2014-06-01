@@ -12,7 +12,8 @@ gem 'bourbon'
 gem 'neat'
 gem 'bitters'
 gem 'devise'
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'minitest-rails', groups: [:development, :test]
 
 group :doc do
   gem 'sdoc', require: false

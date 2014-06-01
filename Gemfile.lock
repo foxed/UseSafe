@@ -67,6 +67,12 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
+    minitest-rails (1.0.1)
+      minitest (~> 4.7)
+      minitest-test (~> 1.0)
+      railties (>= 3.0, < 4.1)
+    minitest-test (1.1.0)
+      minitest (~> 4.0)
     multi_json (1.9.3)
     neat (1.5.1)
       bourbon (>= 3.1)
@@ -137,6 +143,7 @@ DEPENDENCIES
   dotenv-rails
   jbuilder (~> 1.2)
   jquery-rails
+  minitest-rails
   neat
   pg
   rails (= 4.0.4)
